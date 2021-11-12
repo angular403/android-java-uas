@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:background="@drawable/shadow">
+
+        <ImageView
+            android:id="@+id/img_image"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/no_image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_image"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:layout_marginBottom="0dp"
+                android:text="@string/foo"/>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/text_title"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#EEE"/>
+            <TextView
+                android:id="@+id/text_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:maxLines="1"
+                android:text="@string/foo" />
+            <TextView
+                android:id="@+id/text_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_categories"
+                android:textSize="8dp"
+                android:ellipsize="end"
+                android:text="Sept, 11 1992"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
